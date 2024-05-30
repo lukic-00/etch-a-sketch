@@ -1,0 +1,27 @@
+.container{
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+  
+.pixel {
+    display: flex;
+    height: auto;
+    flex-basis: 10px;
+    background-color: red;
+    border: 1px solid black;
+    flex: 1;
+}
+
+.hoveredPixel {
+    background-color: black;
+}
+  
+.row {
+    background-color: red;
+    border: 1px solid black;
+    display: flex;
+    flex: 1;
+}
