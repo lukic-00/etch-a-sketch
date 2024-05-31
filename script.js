@@ -13,7 +13,7 @@ for (let i = 0; i < a; i++){
   pixel.classList.add("hoveredPixel")}
 } }
 } 
-createRow(16)
+createRow(20)
 
 const superContainer = document.querySelector(".superContainer")
 
@@ -28,9 +28,17 @@ function createNewGrid(a){
 }
 
 button.addEventListener("click", function() {
-	let userSelection = prompt()
+  const errorMessage = document.createElement("p")
+
+  const numberInput = document.getElementById("numberInput")
+	let userSelection = numberInput.value
   while(userSelection > 100 || userSelection < 1 || isNaN(userSelection)){
-  userSelection = prompt("Choose a number between 1 and 100!")
+
+  userSelection = 20
+  errorMessage.textContent = "ERROR"
+  superContainer.appendChild(errorMessage)
   }
+  //superContainer.removeChild(errorMessage)
+
   createNewGrid(userSelection)
 });

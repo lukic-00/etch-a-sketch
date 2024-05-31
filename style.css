@@ -1,9 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container{
     height: 500px;
     width: 500px;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
+}
+
+#myBtn {
+    background-color: lightcoral;
+    color: #eee;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+#myBtn2 {
+    background-color: lightcoral;
+    color: #eee;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 40px;
+    margin-top: 10px;    
 }
   
 .pixel {
