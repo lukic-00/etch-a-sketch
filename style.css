@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Rubik", sans-serif;
 }
 
 .container{
@@ -49,4 +52,8 @@ body {
     border: 1px solid black;
     display: flex;
     flex: 1;
+}
+
+.errorMessageClass {
+    color: red;
 }

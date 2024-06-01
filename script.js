@@ -29,6 +29,7 @@ function createNewGrid(a){
 
 let errorMessage = document.createElement("p")
 errorMessage.classList.add("errorMessageClass")
+const displayErrorContainer = document.querySelector(".displayErrorContainer")
 
 button.addEventListener("click", function() {
  
@@ -37,11 +38,11 @@ button.addEventListener("click", function() {
   if(userSelection > 100 || userSelection < 1 || isNaN(userSelection)){
 
   userSelection = 20
-  errorMessage.textContent = "ERROR"
-  superContainer.appendChild(errorMessage)
+  errorMessage.textContent = "Number must be between 1 and 100, without letters or symbols"
+  displayErrorContainer.appendChild(errorMessage)
   } else {
     if(document.querySelector(".errorMessageClass")){
-      superContainer.removeChild(errorMessage)
+      displayErrorContainer.removeChild(errorMessage)
     }
    
   }
