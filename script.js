@@ -27,18 +27,25 @@ function createNewGrid(a){
   createRow(a);
 }
 
-button.addEventListener("click", function() {
-  const errorMessage = document.createElement("p")
+let errorMessage = document.createElement("p")
+errorMessage.classList.add("errorMessageClass")
 
+button.addEventListener("click", function() {
+ 
   const numberInput = document.getElementById("numberInput")
 	let userSelection = numberInput.value
-  while(userSelection > 100 || userSelection < 1 || isNaN(userSelection)){
+  if(userSelection > 100 || userSelection < 1 || isNaN(userSelection)){
 
   userSelection = 20
   errorMessage.textContent = "ERROR"
   superContainer.appendChild(errorMessage)
+  } else {
+    if(document.querySelector(".errorMessageClass")){
+      superContainer.removeChild(errorMessage)
+    }
+   
   }
-  //superContainer.removeChild(errorMessage)
 
   createNewGrid(userSelection)
+
 });
