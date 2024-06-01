@@ -9,7 +9,7 @@ body {
 }
 
 .display {
-    background-color: bisque;
+    background-color: #BFCC94;
     padding: 30px;
     border-radius: 30px;
 }
@@ -17,45 +17,36 @@ body {
 .container{
     height: 500px;
     width: 500px;
-    border: 1px solid black;
+    border: 1px solid #0D1821;
     display: flex;
     flex-direction: column;
 }
 
 #myBtn {
-    background-color: lightcoral;
+    background-color: #DB504A;
+    font-family: "Rubik", sans-serif;
     color: #eee;
     font-size: 16px;
     padding: 10px;
     border-radius: 40px;
     margin-top: 10px;
 }
-
-#myBtn2 {
-    background-color: lightcoral;
-    color: #eee;
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 40px;
-    margin-top: 10px;    
-}
   
 .pixel {
     display: flex;
     height: auto;
     flex-basis: 10px;
-    background-color: red;
-    border: 1px solid black;
+    background-color: #F0F4EF;
+    border: 1px solid #0d182154;
     flex: 1;
 }
 
 .hoveredPixel {
-    background-color: black;
+    background-color: #344966;
 }
   
 .row {
-    background-color: red;
-    border: 1px solid black;
+    background-color: #F0F4EF;
     display: flex;
     flex: 1;
 }
@@ -69,5 +60,5 @@ body {
 }
 
 .errorMessageClass {
-    color: red;
+    color: #0D1821;
 }
