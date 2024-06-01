@@ -8,6 +8,12 @@ body {
     font-family: "Rubik", sans-serif;
 }
 
+.display {
+    background-color: bisque;
+    padding: 30px;
+    border-radius: 30px;
+}
+
 .container{
     height: 500px;
     width: 500px;
@@ -52,6 +58,14 @@ body {
     border: 1px solid black;
     display: flex;
     flex: 1;
+}
+
+.displayErrorContainer{
+    text-align: center;
+}
+
+.inputContainer {
+    text-align: center;
 }
 
 .errorMessageClass {
