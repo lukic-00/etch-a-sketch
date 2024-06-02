@@ -1,17 +1,32 @@
 let container = document.querySelector(".container")
 
 function createRow(a){
-for (let i = 0; i < a; i++){
-  const row = document.createElement("div")
-  row.classList.add("row");
-  container.appendChild(row);
-    for (let i = 0; i < a; i++){
-    const pixel = document.createElement("div")
-    pixel.classList.add("pixel")
-    row.appendChild(pixel)
-  pixel.onmouseenter = function(){
-  pixel.classList.add("hoveredPixel")}
-} }
+if(document.getElementById("whiteBlue").checked){
+  for (let i = 0; i < a; i++){
+    const row = document.createElement("div")
+    row.classList.add("row");
+    container.appendChild(row);
+      for (let i = 0; i < a; i++){
+      const pixel = document.createElement("div")
+      pixel.classList.add("pixel")
+      row.appendChild(pixel)
+    pixel.onmouseenter = function(){
+    pixel.classList.add("hoveredPixel")}
+  }
+} } else if (document.getElementById("redBlack").checked){
+  for (let i = 0; i < a; i++){
+    const row = document.createElement("div")
+    row.classList.add("row");
+    container.appendChild(row);
+      for (let i = 0; i < a; i++){
+      const pixel = document.createElement("div")
+      pixel.classList.add("secondaryPixel")
+      row.appendChild(pixel)
+    pixel.onmouseenter = function(){
+    pixel.classList.add("secondaryHoveredPixel")}
+  }
+}
+}
 } 
 createRow(20)
 

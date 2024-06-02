@@ -42,8 +42,21 @@ body {
     flex: 1;
 }
 
+.secondaryPixel {
+    display: flex;
+    height: auto;
+    flex-basis: 10px;
+    background-color: red;
+    border: 1px solid #0d182154;
+    flex: 1;
+}
+
 .hoveredPixel {
     background-color: #344966;
+}
+
+.secondaryHoveredPixel {
+    background-color: black;
 }
   
 .row {
