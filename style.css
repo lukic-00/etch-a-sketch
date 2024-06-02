@@ -6,10 +6,11 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Rubik", sans-serif;
+    background-color: #adcbe1;
 }
 
 .display {
-    background-color: #BFCC94;
+    background-color: #aab87c;
     padding: 30px;
     border-radius: 30px;
 }
